@@ -1,0 +1,16 @@
+.bar {
+  height: 30px;
+  padding: 0 3px;
+  border: 2px solid #3498db;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  .progress {
+    height: 22px;
+    width: 0%;
+    background: #48dbfb;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+}

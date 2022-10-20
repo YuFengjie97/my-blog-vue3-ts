@@ -1,0 +1,11 @@
+.card-wrap {
+  display: inline-block;
+
+  .card {
+    width: 250px;
+    height: 340px;
+    background: #333;
+    transform-style: preserve-3d;
+    perspective: 800px;
+  }
+}

@@ -1,0 +1,34 @@
+:root {
+  box-sizing: border-box;
+}
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  text-transform: capitalize;
+  outline: none;
+  border: none;
+  // transition: all 0.2s linear;
+}
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.scroller {
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 100%;
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  &::-webkit-scrollbar-track {
+    border-radius: 2px;
+    background: #636e72;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background: #2d3436;
+  }
+}

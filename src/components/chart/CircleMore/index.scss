@@ -1,0 +1,33 @@
+.circleMore {
+  position: relative;
+
+  svg {
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    // g {
+    //   position: absolute;
+    //   top: 50%;
+    //   left: 50%;
+    //   transform: translate(-50%, -50%);
+    // }
+    circle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      transition: 1s;
+      transition-timing-function: ease-in-out;
+      transform: rotate(-90deg);
+      transform-origin: center;
+    }
+    text {
+      transition: 1s;
+    }
+  }
+}

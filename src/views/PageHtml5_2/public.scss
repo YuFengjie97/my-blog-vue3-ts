@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
+
+*::selection {
+  background: var(--orange);
+  color: #fff;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1em;
+  background: var(--orange);
+  color: #fff;
+  padding: 0.8em 3em;
+  border: 2px solid var(--orange);
+  cursor: pointer;
+  font-size: 1.7em;
+  &:hover {
+    background: rgba(255, 165, 0, 0.2);
+    color: var(--orange);
+  }
+}
+
+.heading {
+  text-align: center;
+  padding: 2em 0;
+  span {
+    display: inline-block;
+    font-size: 4em;
+    padding: 0 0.3em;
+    border-radius: 10px;
+    font-weight: bold;
+    color: var(--orange);
+    background: rgba(255, 165, 0, 0.2);
+    margin-right: 0.1em;
+  }
+}

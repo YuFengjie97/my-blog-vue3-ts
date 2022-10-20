@@ -1,0 +1,92 @@
+.progressCube {
+  margin-top: 30px;
+  $xlen: 400px;
+  $ylen: 60px;
+  $colorBase: rgba(254, 254, 254, 0.6);
+  width: $xlen;
+  height: $ylen;
+  transform-style: preserve-3d;
+  transform: rotateX(-30deg);
+  perspective: 1000px;
+  .item {
+  }
+  .progress {
+    height: 100%;
+    width: var(--width);
+    background-color: var(--color);
+    transition: 0.75s;
+    transition-timing-function: ease-in-out;
+  }
+  .left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: $ylen;
+    height: $ylen;
+    transform-origin: left center;
+    transform: rotateY(90deg);
+    background-color: var(--color);
+    opacity: 0.3;
+  }
+  .right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: $ylen;
+    height: $ylen;
+    background-color: $colorBase;
+    transform-origin: right center;
+    transform: rotateY(-90deg);
+    opacity: 0.3;
+  }
+  .up {
+    width: $xlen;
+    height: $ylen;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $colorBase;
+    transform-origin: top center;
+    transform: rotateX(-90deg);
+    opacity: 0.3;
+  }
+  .down {
+    width: $xlen;
+    height: $ylen;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform-origin: bottom center;
+    transform: rotateX(90deg);
+    background-color: #fff;
+    box-shadow: 0 0.1em 0.6em rgb(0 0 0 / 30%),
+      0.6em -0.5em 3em rgb(0 0 0 / 30%), 1em -1em 8em #fefefe;
+    opacity: 0.3;
+    .progress {
+      box-shadow: 0em 0em 2em var(--color);
+    }
+  }
+  .front {
+    width: $xlen;
+    height: $ylen;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $colorBase;
+    opacity: 0.3;
+  }
+  .behind {
+    width: $xlen;
+    height: $ylen;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $colorBase;
+    transform: translateZ(-$ylen);
+    opacity: 0.3;
+    .progress {
+      // box-shadow: var(--color) -16px -48px 128px 0px;
+      box-shadow: var(--color) 0px 0px 128px 0px;
+    }
+  }
+}
