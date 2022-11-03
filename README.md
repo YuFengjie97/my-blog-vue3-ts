@@ -2,20 +2,18 @@
 
 ## Project setup
 ```
-pnpm install
+npm install
 ```
 
 ### Compiles and hot-reloads for development
 ```
-pnpm run serve
+npm run serve
 ```
 
 ### Compiles and minifies for production
 ```
-pnpm run build
+npm run build
 ```
 
-### Lints and fixes files
-```
-pnpm run lint
-```
+### 预览
+[点我预览](https://yufengjie97.github.io/my-blog-vue3-ts/)
