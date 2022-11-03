@@ -42,7 +42,7 @@ export function initFeatureHover(map: Map) {
   //使用select,选中要素
   const selectPointerMove = new Select({
     condition: pointerMove,
-    style: null, //openlayer ts定义下,没有null,需要自己手动添加
+    style: undefined, //openlayer ts定义下,没有null,需要自己手动添加
     // hitTolerance: 20,//误差
   });
   map.addInteraction(selectPointerMove);
