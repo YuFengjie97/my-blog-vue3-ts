@@ -26,8 +26,10 @@ const blankStyle = new Style({
 
 //地图source
 export function initHlSource(url: string) {
+  console.log(process.env);
+  
   const source = new VectorSource({
-    url: url,
+    url: process.env.VUE_APP_PublicPath + url,
     format: new GeoJSON(),
   });
 
@@ -44,7 +46,7 @@ export function initHlLayer(source: VectorSource) {
 //消除指定source下所有要素的样式,vecSource
 export function clearStyle(source: VectorSource): void {
   const featureList = source.getFeatures();
-  if (featureList != [] && featureList != null) {
+  if (featureList.length > 0) {
     featureList.forEach((f) => {
       f.setStyle(blankStyle);
     });

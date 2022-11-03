@@ -36,7 +36,7 @@ export default function controllerHightlight() {
 
   onMounted(async () => {
     map = store.state.map;
-    hlSource = initHlSource("/geojson/100000_full.json");
+    hlSource = initHlSource("geojson/100000_full.json");
     hlLayer = initHlLayer(hlSource);
     map?.addLayer(hlLayer);
 

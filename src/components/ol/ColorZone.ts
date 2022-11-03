@@ -55,7 +55,7 @@ export default function colorZone() {
   function initColorLayer(url: string, style: Style) {
     const layer = new VectorLayer({
       source: new VectorSource({
-        url,
+        url: process.env.VUE_APP_PublicPath + url,
         format: new GeoJSON(),
       }),
       style,
@@ -67,10 +67,10 @@ export default function colorZone() {
     console.log("colorzone");
 
     const map = store.state.map;
-    initColorLayer("/geojson/370000_1.json", style1);
-    initColorLayer("/geojson/370000_2.json", style2);
-    initColorLayer("/geojson/370000_3.json", style3);
-    initColorLayer("/geojson/370000_4.json", style4);
+    initColorLayer("geojson/370000_1.json", style1);
+    initColorLayer("geojson/370000_2.json", style2);
+    initColorLayer("geojson/370000_3.json", style3);
+    initColorLayer("geojson/370000_4.json", style4);
     layers.forEach((layer) => {
       map?.addLayer(layer);
       layer.setZIndex(1);
