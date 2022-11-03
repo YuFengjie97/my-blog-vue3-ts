@@ -13,6 +13,8 @@ import "@/mock/mock.ts";
 import hljs from "highlight.js";
 import "highlight.js/styles/github.css";
 
+console.log(process.env.NODE_ENV);
+
 const app = createApp(App)
   .use(store)
   .use(router)

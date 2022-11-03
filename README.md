@@ -16,4 +16,4 @@ npm run build
 ```
 
 ### 预览
-[点我预览](https://yufengjie97.github.io/my-blog-vue3-ts/)
+[点我预览](https://yufengjie97.github.io/my-blog-vue3-ts/#/)
